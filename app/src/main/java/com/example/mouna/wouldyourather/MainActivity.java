@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 // update the database
                 myRef.child("questions").child(String.valueOf(index)).child("compteur1").setValue(question.getCompteur1()+1);
                 // show percentage
-                percentage1.setText(question.getCompteur1()/(question.getCompteur1()+question.getCompteur2())*100);
-                percentage2.setText(question.getCompteur2()/(question.getCompteur1()+question.getCompteur2())*100);
+                percentage1.setText(String.valueOf(question.getCompteur1()/(question.getCompteur1()+question.getCompteur2())*100));
+                percentage2.setText(String.valueOf(question.getCompteur2()/(question.getCompteur1()+question.getCompteur2())*100));
 
 
             }
